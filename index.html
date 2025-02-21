@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChronoMots</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ChronoMots</h1>
+        <div id="choix-theme">
+            <p>Choisissez un thème :</p>
+            <select id="theme-select"></select>
+            <p>Durée du chronomètre (secondes) :</p>
+            <input type="number" id="duree-chrono" value="60" min="10" max="300">
+            <button id="valider-theme">Valider</button>
+        </div>
+        <div id="jeu" class="hidden">
+            <div id="theme-display">Thème : <span id="theme"></span></div>
+            <div id="carte-display">Carte : <span id="carte"></span></div>
+            <div id="chrono">Temps restant : <span id="temps"></span> secondes</div>
+            <div id="score">Mots devinés : <span id="compteur">0</span></div>
+            <div id="resultat"></div>
+            <button id="mot-trouve">Mot trouvé !</button>
+            <button id="passe">Passe</button>
+            <button id="recommencer">Recommencer</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

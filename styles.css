@@ -1,0 +1,149 @@
+/* Reset de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+}
+
+h1 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#choix-theme {
+    margin-bottom: 25px;
+}
+
+#choix-theme p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #555;
+}
+
+#theme-select, #duree-chrono {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 200px;
+    margin: 5px 0;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    color: #333;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#theme-select:focus, #duree-chrono:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+    outline: none;
+}
+
+#duree-chrono {
+    width: 100px;
+}
+
+#jeu.hidden {
+    display: none;
+}
+
+#theme-display, #carte-display {
+    margin: 20px 0;
+    font-size: 18px;
+    color: #444;
+}
+
+#carte-display {
+    font-weight: bold;
+    font-size: 50px; /* Taille du mot agrandie */
+    color: #007bff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#chrono, #score {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #333;
+}
+
+#chrono {
+    color: #e74c3c;
+}
+
+#score {
+    color: #2ecc71;
+}
+
+#resultat {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #333;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    padding: 12px 24px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: #fff;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#passe {
+    background-color: #f39c12;
+}
+
+#passe:hover {
+    background-color: #e67e22;
+}
+
+#recommencer {
+    background-color: #e74c3c;
+}
+
+#recommencer:hover {
+    background-color: #c0392b;
+}
