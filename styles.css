@@ -9,12 +9,46 @@ body {
     font-family: 'Arial', sans-serif;
     background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     height: 100vh;
     margin: 0;
 }
 
+/* Bande en haut */
+header {
+    width: 100%;
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.bande-haut {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nom-jeu {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.onglet-contacter a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: opacity 0.3s;
+}
+
+.onglet-contacter a:hover {
+    opacity: 0.8;
+}
+
+/* Contenu principal */
 .container {
     text-align: center;
     background: #ffffff;
@@ -23,6 +57,7 @@ body {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     max-width: 500px;
     width: 100%;
+    margin-top: 20px;
 }
 
 h1 {
@@ -46,7 +81,7 @@ h1 {
     padding: 10px;
     font-size: 16px;
     width: 100%;
-    max-width: 200px;
+    max-width: 1500px;
     margin: 5px 0;
     border: 2px solid #007bff;
     border-radius: 8px;
@@ -69,17 +104,18 @@ h1 {
     display: none;
 }
 
-#theme-display, #carte-display {
+#theme-display {
     margin: 20px 0;
     font-size: 18px;
     color: #444;
 }
 
-#carte-display {
+#mot-a-deviner {
     font-weight: bold;
-    font-size: 50px; /* Taille du mot agrandie */
+    font-size: 42px;
     color: #007bff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
 }
 
 #chrono, #score {
@@ -146,4 +182,117 @@ button:active {
 
 #recommencer:hover {
     background-color: #c0392b;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.bande-haut {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nom-jeu {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.container {
+    text-align: center;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+h1 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    color: #333;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    resize: vertical;
+    min-height: 100px;
+}
+
+.form-group textarea:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+    outline: none;
+}
+
+button[type="submit"] {
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: #fff;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+button[type="submit"]:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#resultat-suggestion {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
 }

@@ -7,6 +7,17 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Bande en haut -->
+    <header>
+        <div class="bande-haut">
+            <div class="nom-jeu">ChronoMots</div>
+            <div class="onglet-suggestions">
+                <a href="suggestions.html" id="suggestions">Suggestions</a> <!-- Redirection vers suggestions.html -->
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenu principal -->
     <div class="container">
         <h1>ChronoMots</h1>
         <div id="choix-theme">
@@ -18,7 +29,7 @@
         </div>
         <div id="jeu" class="hidden">
             <div id="theme-display">Thème : <span id="theme"></span></div>
-            <div id="carte-display">Carte : <span id="carte"></span></div>
+            <div id="mot-a-deviner"><span id="mot"></span></div>
             <div id="chrono">Temps restant : <span id="temps"></span> secondes</div>
             <div id="score">Mots devinés : <span id="compteur">0</span></div>
             <div id="resultat"></div>
@@ -27,6 +38,8 @@
             <button id="recommencer">Recommencer</button>
         </div>
     </div>
+
+    <!-- Script JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>

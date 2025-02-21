@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suggestions - ChronoMots</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="bande-haut">
+            <div class="nom-jeu">
+                <a href="index.html" style="text-decoration: none; color: inherit;">ChronoMots</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Suggestions</h1>
+        <form id="form-suggestions">
+            <div class="form-group">
+                <label for="suggestion">Votre suggestion :</label>
+                <textarea id="suggestion" name="suggestion" rows="5" required></textarea>
+            </div>
+            <button type="submit">Envoyer</button>
+        </form>
+        <div id="resultat-suggestion"></div>
+    </div>
+
+    <script src="suggestions.js"></script>
+</body>
+</html>
