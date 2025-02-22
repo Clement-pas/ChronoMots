@@ -7,7 +7,7 @@ const categories =
         "Luge", "Chamois", "Marmotte", "Lac gelé", "Téléphérique",
         "Dameuse", "Hors-piste", "Crevasse", "Édelweiss",
         "Ski de fond", "Parapente", "Crampons", "Piolet", "Refuge",
-        "Col", "Serpentins", "Chamois d'or", "Givre", "Montagnard",
+        "Col","Chamois d'or", "Givre", "Montagnard",
          "Igloo", "Tempête de neige", "Clarines","Fondue",
     ],
     "L'univers spatial": [
